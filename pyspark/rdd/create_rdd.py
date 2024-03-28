@@ -9,7 +9,6 @@ rdd = spark.sparkContext.parallelize(number)
 print(rdd.collect())
 
 # RDD in list of tuple
-
 name_age = [('Pratibha' , 25) , ('Shubham' , 26) , ('Nishta', 28)]
 rdd1 = spark.sparkContext.parallelize(name_age)
 print("All the elements of lis:" , rdd1.collect())
