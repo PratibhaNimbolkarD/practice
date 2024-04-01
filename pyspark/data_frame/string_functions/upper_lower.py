@@ -11,8 +11,9 @@ schema = ["first_name" , "last_name" , "city"]
 
 name_df = spark.createDataFrame(data=name , schema=schema)
 
-df = name_df.withColumn("first_name", upper(col("first_name")))
-df = name_df.withColumn("city" , lower(col("city")))
-df.show()
+df_upper = name_df.withColumn("first_name", upper(col("first_name")))
+df_lower = name_df.withColumn("city" , lower(col("city")))
+df_upper.show()
+df_lower.show()
 
 
