@@ -10,5 +10,6 @@ name = [("Aarav", "Patel", "Udaipur"),
 schema = ["first_name", "last_name", "city"]
 
 df_name = spark.createDataFrame(data=name, schema=schema)
-df_name = df_name.withColumn("last_name", substring(col("last_name"), 1,4))
-df_name.show()
+df_substring = df_name.withColumn("last_name", substring(col("last_name"), 1,4))
+print("using substring function")
+df_substring.show()
