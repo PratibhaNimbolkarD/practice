@@ -10,9 +10,9 @@ name = [("   Aarav ", "Patel   ", "   Udaipur   "),
 schema = ["first_name", "last_name", "city"]
 
 df_name = spark.createDataFrame(data=name, schema=schema)
-df = df_name.withColumn("last_name", trim(col("last_name")))
-df = df.withColumn("city", rtrim(col("city")))
-df = df.withColumn("first_name" , ltrim(col("first_name")))
+df_ltrim_rtrim_trim = df_name.withColumn("last_name", trim(col("last_name")))
+df_ltrim_rtrim_trim = df_ltrim_rtrim_trim.withColumn("city", rtrim(col("city")))
+df_ltrim_rtrim_trim= df_ltrim_rtrim_trim.withColumn("first_name" , ltrim(col("first_name")))
 
 
-df.show()
+df_ltrim_rtrim_trim.show()
