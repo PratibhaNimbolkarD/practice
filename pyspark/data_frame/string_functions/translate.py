@@ -10,5 +10,6 @@ name = [("Aarav", "Patel", "Udaipur"),
 schema = ["first_name", "last_name", "city"]
 
 df_name = spark.createDataFrame(data=name, schema=schema)
-df_name = df_name.withColumn("city" , translate(col("city"), "aeiou" , "12345"))
-df_name.show()
+df_translate = df_name.withColumn("city" , translate(col("city"), "aeiou" , "12345"))
+print("using translate")
+df_translate.show()
