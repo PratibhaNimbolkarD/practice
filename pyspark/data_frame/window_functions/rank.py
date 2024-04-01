@@ -20,5 +20,5 @@ emp_data = [(1,'manish',50000,'IT','m'),
 schema = ["emp_id" , "emp_name" , "salary" , "dept" , "gender"]
 emp_data_df = spark.createDataFrame(data=emp_data , schema= schema)
 window = Window.partitionBy("dept").orderBy("salary")
-emp_data_df = emp_data_df.withColumn("rank" , rank().over(window))
-emp_data_df.show()
+using_rank = ((emp_data_df.withColumn("rank" , rank().over(window))))
+using_rank.show()
