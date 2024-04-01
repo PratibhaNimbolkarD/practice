@@ -33,4 +33,5 @@ product_df = spark.createDataFrame(data=product_data , schema=schema)
 
 window = Window.partitionBy("product_id").orderBy("sales_date")
 last_month_df = product_df.withColumn("previous_month_sales" , lag(col("sales"),1).over(window))
-last_month_df.withColumn("per_loss-gain" , round(((col("sales")-col("previous_month_sales"))/col("sales"))*100,2)).show()
+using_lag = last_month_df.withColumn("per_loss-gain" , round(((col("sales")-col("previous_month_sales"))/col("sales"))*100,2))
+using_lag.show()
