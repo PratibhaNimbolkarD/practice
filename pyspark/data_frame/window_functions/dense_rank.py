@@ -22,5 +22,5 @@ schema = ["emp_id" , "emp_name" , "salary" , "dept" , "gender"]
 emp_data_df = spark.createDataFrame(data=emp_data , schema= schema)
 
 window = Window.partitionBy("dept").orderBy(desc("salary"))
-emp_data_df = emp_data_df.withColumn("dense_rank" , dense_rank().over(window))
-emp_data_df.show()
+dense_rank_emp_data_df = emp_data_df.withColumn("dense_rank" , dense_rank().over(window))
+dense_rank_emp_data_df.show()
