@@ -12,7 +12,7 @@ name = [("Aarav", "Patel", "Udaipur"),
 schema = ["first_name", "last_name", "city"]
 
 df_name = spark.createDataFrame(data=name, schema=schema)
-df_name = df_name.withColumn("substring1", substring_index(col("first_name"), "a", 2))
+df_substring_index = df_name.withColumn("substring1", substring_index(col("first_name"), "a", 2))
 #if we use -1 then it will print substring after a
 df_name = df_name.withColumn("substring2", substring_index(col("first_name"),"a", -1))
-df_name.show()
+df_substring_index.show()
