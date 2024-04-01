@@ -18,4 +18,5 @@ simpleData = [("James", "Sales", 3000),
 schema = ["employee_name" , "department","salary"]
 df = spark.createDataFrame(data=simpleData , schema=schema)
 window = Window.partitionBy("department").orderBy("salary")
-df.withColumn("lag", lag("salary" ,1).over(window)).show()
+using_lag = df.withColumn("lag", lag("salary" ,1).over(window))
+using_lag.show()
