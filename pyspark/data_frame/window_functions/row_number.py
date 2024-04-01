@@ -22,5 +22,5 @@ schema = ["emp_id" , "emp_name" , "salary" , "dept" , "gender"]
 emp_data_df = spark.createDataFrame(data=emp_data , schema= schema)
 
 window = Window.partitionBy("dept").orderBy("salary")
-emp_data_df = emp_data_df.withColumn("row_no" , row_number().over(window))
-emp_data_df.show()
+using_row_no = emp_data_df.withColumn("row_no" , row_number().over(window))
+using_row_no.show()
