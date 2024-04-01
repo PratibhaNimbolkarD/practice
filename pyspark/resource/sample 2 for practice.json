@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Edmond Weissnat",
+		"phoneNumber": "+1 (929) 622-3177",
+		"email": "urunte@swaniawski.com",
+		"address": "989 Hoeger Motorway\nIzabellaburgh, WI 22677",
+		"userAgent": "Opera/9.40 (Windows CE; sl-SI) Presto/2.11.209 Version/11.00",
+		"hexcolor": "#1af9a5"
+	},
+	{
+		"name": "Dr. Jamison Macejkovic IV",
+		"phoneNumber": "224.928.9760",
+		"email": "lemard@parisian.org",
+		"address": "86837 Dickens Fields\nPort Lemuel, WA 28565",
+		"userAgent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; Trident/4.0)",
+		"hexcolor": "#773865"
+	},
+	{
+		"name": "Lupe Crooks",
+		"phoneNumber": "(850) 461-5436",
+		"email": "hessel.fausto@bradtke.com",
+		"address": "9019 Powlowski Roads\nNorth Gudrun, AL 00428-2999",
+		"userAgent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows CE; Trident/3.1)",
+		"hexcolor": "#8b8195"
+	},
+	{
+		"name": "Verona Harvey",
+		"phoneNumber": "+1-520-763-7772",
+		"email": "heller.brooks@hotmail.com",
+		"address": "9917 Lonie View\nBayerfurt, AK 60241-0760",
+		"userAgent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_2 rv:2.0; sl-SI) AppleWebKit/531.36.3 (KHTML, like Gecko) Version/5.0 Safari/531.36.3",
+		"hexcolor": "#c48c5a"
+	}
+]
