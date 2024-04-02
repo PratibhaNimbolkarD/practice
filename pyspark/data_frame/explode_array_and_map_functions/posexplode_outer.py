@@ -7,9 +7,9 @@ spark = SparkSession.builder.appName("explode").getOrCreate()
 data = [
     ("Aakash", 25, ["apple", "banana", "orange"], "New York", "Male"),
     ("Himani", 30, ["grape", "pear"], "Los Angeles", "Female"),
-    ("Neha", 35, ["watermelon", "kiwi", "mango"], "Chicago", "Female"),
+    ("Neha", 35, [], "Chicago", "Female"),
     ("Junaid", 40, ["pineapple", "strawberry"], "Houston", "Male"),
-    ("Manisha", 28, ["blueberry", "raspberry", "blackberry"], "San Francisco", "Female")
+    ("Manisha", 28, ["blueberry", "raspberry", "blackberry"], None, "Female")
 ]
 
 schema = StructType([
