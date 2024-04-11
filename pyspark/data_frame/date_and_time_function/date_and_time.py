@@ -17,5 +17,4 @@ df = df.withColumn("month", month(df["date_str"]))
 df = df.withColumn("day", day(df["date_str"]))
 df = df.withColumn("parsed_date", to_date(df["date_str"]))
 df = df.withColumn("formatted_date", date_format(df["parsed_date"], "yyyy-MM-dd"))
-
 df.show()
