@@ -12,5 +12,4 @@ depdf = spark.createDataFrame(data=data2 ,schema=schema2)
 
 empdf.show()
 depdf.show()
-
-empdf.join(depdf , empdf.dep == depdf.id , 'right').show()
+empdf.join(depdf,empdf.dep == depdf.id, 'right').show()
