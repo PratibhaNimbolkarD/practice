@@ -9,7 +9,7 @@ data = [
     ("Himani", 30, ["grape", "pear"], "Los Angeles", "Female"),
     ("Neha", 35, ["watermelon", "kiwi", "mango"], "Chicago", "Female"),
     ("Junaid", 40, ["pineapple", "strawberry"], "Houston", "Male"),
-    ("Manisha", 28, ["blueberry", "raspberry", "blackberry"], "San Francisco", "Female")
+    ("Manisha", 28, ["blueberry", "raspberry", "blackberry"], None, "Female")
 ]
 schema = StructType([
     StructField("Name", StringType(), True),
